@@ -1,9 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import scholarHat from '../assets/graduation-cap.png'
 import { Button } from '@mui/material'
-import getSheetData from '../getSheetData'
 import { useRouter } from 'next/router'
 export default function Home() {
   const router = useRouter()
@@ -19,11 +14,18 @@ export default function Home() {
       <p className="text-yellow-400 tracking-wider text-2xl mb-10 p-5 text-center"> @ Aurum Sarjapur</p>
       <p className="text-white tracking-wider text-2xl mb-10 p-5 text-center"> Kindly Pay the Rs. 1000 by March 9, 2022</p>
       </a> 
-      <Button variant='contained' className='bg-yellow-500 text-black mb-10' onClick={()=> router.push("/payNow")} >Pay now. 1000/-</Button>
-      <Button variant='contained' className='bg-yellow-500 text-black mb-10' onClick={()=> router.push('https://drive.google.com/file/d/1VrycOBf1P03m1HQV8Fw-Huz7ofco1kz3/view?usp=sharing')} >download invite!!</Button>
-      <Button variant='contained' className='bg-yellow-500 text-black mb-10' onClick={()=>router.push('https://aurumbrew.works/')} >check venue!!</Button>
-      <Button variant='contained' className='bg-yellow-500 text-black mb-10' onClick={()=>router.push('/nameList')} >Check who all are coming</Button>
-      
+      <div className='mb-10'>
+      <Button variant='contained' className='bg-yellow-500 text-black' onClick={()=> router.push("/payNow")} >Pay now. 1000/-</Button>
+    </div>
+    <div className='mb-10'>
+      <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=> router.push('https://drive.google.com/file/d/1VrycOBf1P03m1HQV8Fw-Huz7ofco1kz3/view?usp=sharing')} >download invite!!</Button>
+      </div>
+      <div className='mb-10'>
+      <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=>router.push('https://aurumbrew.works/')} >check venue!!</Button>
+      </div>
+      <div className='mb-10'>
+      <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=>router.push('/nameList')} >Check who all are coming</Button>
+     </div> 
       
           </div>
   )
