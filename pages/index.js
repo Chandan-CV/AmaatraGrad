@@ -16,7 +16,7 @@ export default function Home() {
       <Button variant='contained' className='bg-yellow-500 text-black' onClick={()=> router.push("/payNow")} >Pay now. 1000/-</Button>
     </div>
     <div className='mb-10'>
-      <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=> router.push('https://drive.google.com/file/d/1WVBcJLX2-7X1AmA5YmiCxneh_N6YGeQx/view?usp=sharing')} >download invite!!</Button>
+      <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=> router.push('https://drive.google.com/file/d/1y2V8k6fpIpinEP2IRTrwp_3G_qH_r6IU/view?usp=sharing')} >download invite!!</Button>
       </div>
       <div className='mb-10'>
       <Button variant='contained' className='bg-yellow-500 text-black ' onClick={()=>router.push('https://www.google.com/maps/place/Aurum+Brew+Works/@12.9107114,77.6768953,15z/data=!4m9!1m2!2m1!1saurum+sarjapur!3m5!1s0x3bae13afe6ef787f:0x77ece6ff5c3e32c6!8m2!3d12.9107114!4d77.68565!15sCg5hdXJ1bSBzYXJqYXB1cloQIg5hdXJ1bSBzYXJqYXB1cpIBB2JyZXdwdWI')} >check venue!!</Button>
