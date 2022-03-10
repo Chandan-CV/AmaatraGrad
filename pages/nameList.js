@@ -5,6 +5,8 @@ function nameList() {
     const {A,B,C,D} = getSheetData()
     return (
         <div className="p-5">
+            <h1 className='text-4xl mt-10'>Total count:{A.length+B.length+C.length+D.length}</h1>
+            
             <h1 className='text-4xl mt-10'>A section</h1>
             {
                 A.map((ele)=> <p key={ele}>{ele}</p>)
@@ -23,6 +25,7 @@ function nameList() {
             {
                 D.map((ele)=> <p key={ele}>{ele}</p>)
             }
+        
         </div>
   )
 }
