@@ -11,6 +11,7 @@ export default function Home() {
       <p className="text-white tracking-widest text-2xl mb-10 p-5 text-center">Congratulation class of 2022</p>
       <p className="text-yellow-400 tracking-wider text-2xl mb-10 p-5"> Saturday, March 12, 2022</p>
       <p className="text-yellow-400 tracking-wider text-2xl mb-10 p-5 text-center"> @ Aurum Sarjapur</p>
+      <p className="text-white tracking-wider text-2xl mb-10 p-5 text-center font-bold"> Please carry an ID to be allowed in.</p>
       <p className="text-white tracking-wider text-2xl mb-10 p-5 text-center"> Kindly Pay the Rs. 1000 by March 9, 2022</p>
       <div className='mb-10'>
       <Button variant='contained' className='bg-yellow-500 text-black' onClick={()=> router.push("/payNow")} >Pay now. 1000/-</Button>
